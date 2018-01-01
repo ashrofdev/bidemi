@@ -2,27 +2,15 @@
     background-color: black;
     text-align: center;
     color: white;
-    padding-bottom: 1rem;
 }
 .footer_logo {
     width: 15rem;
 }
 
-.footer_text {
-    color: rgb(221, 219, 219);
-    padding: 2rem 0;
-    width: 35rem;
-    font-style: italic;
-    margin: auto;
-}
 
 .footer .copy {
     color: rgb(88, 86, 86);
-    margin-top: 3rem;
     font-weight: 100;
-}
-@media only screen and (max-width: 350px) {
-   .footer_text {
-       width: 20rem;
-   }
+    font-size: 1rem;
+    padding: 1rem;
 }
