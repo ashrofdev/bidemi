@@ -122,6 +122,10 @@ class App extends Component {
 
   
   render() {
+
+    const filteredPrducts = this.state.products.filter(item=>{
+      
+    })
     
     return (
       <div className="App">
