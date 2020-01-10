@@ -1,0 +1,39 @@
+.product {
+    color: black;
+    box-shadow: 1px 1px 1rem rgb(31, 30, 30);
+    background-color: white;
+    height: min-content;
+}
+.product_name {
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+}
+.product p {
+    padding: .5rem;
+}
+.product_cta {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1rem;
+}
+.product_cta button, .product_cta p {
+    width: 100%;
+}
+.product_price {
+    font-weight: 600;
+    color: black;
+}
+.product_cta button {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: rgba(19, 18, 18, 0.89);
+}

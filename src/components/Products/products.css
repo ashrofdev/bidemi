@@ -1,0 +1,12 @@
+.products {
+    padding: 5rem 0;
+    display: grid;
+    background-color: rgba(36, 35, 35, 0.459);
+    grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(8rem, 14rem)) minmax(2rem, 1fr);
+}
+.products .content {
+    grid-column: 2/8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}

@@ -1,0 +1,75 @@
+@keyframes price {
+    0% {
+        transform: rotate(-22deg) scale(1);
+    }
+    100% {
+        transform: rotate(-22deg) scale(1.1);
+    }
+}
+
+.product_details {
+    padding: 5rem 0;
+    display: grid;
+    background-color: rgba(36, 35, 35, 0.459);
+    grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(8rem, 14rem)) minmax(2rem, 1fr);
+}
+.product_details .content {
+    grid-column: 2/8;
+}
+.product_details h3 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 3px black;
+}
+.product_details figure {
+    align-self: flex-start;
+    
+}
+.product_details img {
+    width: 90%;
+}
+.product_details .top, .product_details .bottom {
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product_details .details p {
+    color: white;
+    margin: 1.5rem 0;
+}
+.product_details .details .price_tag {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    margin-left: -1rem;
+    font-size: 2rem;
+    background-color: black;
+    padding: 2rem 3rem;
+    border: 5px dotted white;
+    box-shadow: 2px 2px 1rem black;
+    animation: price 2s infinite ease-in-out alternate;
+}
+.product_details button {
+    padding: 1.5rem 3rem;
+    background-color: white;
+    border: none;
+    box-shadow: 3px 3px 1rem white;
+    color: black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all .4s;
+    margin-left: 1rem;
+}
+.product_details .back {
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: none;
+}
+.product_details button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 3px 5px 1rem black;
+}

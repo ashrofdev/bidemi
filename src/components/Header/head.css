@@ -1,0 +1,42 @@
+.header {
+    padding-top: 2rem;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(8rem, 14rem)) minmax(2rem, 1fr);
+}
+.header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 2/8;
+}
+.header .slider {
+    margin: 1rem;
+    width: 100%;
+    opacity: .6;
+    margin-left: auto;
+}
+.header .slider .slide img {
+    height: 50vh;
+    width: auto;
+    margin-left: auto;
+}
+
+.header .bottom_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom_row .search_box {
+    width: 20rem;
+    height: 1.6rem;
+    margin-bottom: .4rem;
+    border: none;
+    padding: .5rem;
+    border-radius: .2rem;
+    padding-left: 1rem;
+    outline: none;
+    background-color: rgba(247, 242, 242, 0.664);
+    font-size: 1.3rem;
+}
