@@ -64,3 +64,17 @@
     background-color: rgba(247, 242, 242, 0.664);
     font-size: 1.3rem;
 }
+
+@media only screen and (max-width: 850px) {
+    .pcl {
+        padding-right: 5rem;
+    }
+    .pcl h1 {
+        font-size: 5rem;
+        letter-spacing: 3rem;
+    }
+    .pcl p {
+        letter-spacing: .1rem;
+    }
+    
+}
