@@ -18,3 +18,32 @@
     font-size: 1.2rem;
     outline: none;
 }
+.buy_now .cta {
+    text-align: right;
+    padding: 1rem;
+}
+.cta button {
+    padding: 1.5rem 3rem;
+    background-color: white;
+    border: none;
+    box-shadow: 3px 3px 1rem white;
+    color: black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all .4s;
+    margin-left: 1rem;
+}
+.cta .back {
+    background-color: rgba(43, 42, 42, 0.849);
+    color: white;
+    box-shadow: 3px 5px 1rem black;
+}
+
+.cta button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 3px 5px 1rem black;
+}
