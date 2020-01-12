@@ -5,7 +5,6 @@ import { firebaseDB, storage } from './Server';
 import { scroller } from 'react-scroll'
 
 import Header from './components/Header/Header';
-import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Products from './components/Products/Products';
 import ProductDetails from './components/ProductDetails/ProductDetails';

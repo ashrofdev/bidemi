@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bidemi/static/css/main.6a0abad0.chunk.css",
+    "main.js": "/bidemi/static/js/main.0285368d.chunk.js",
+    "main.js.map": "/bidemi/static/js/main.0285368d.chunk.js.map",
+    "runtime-main.js": "/bidemi/static/js/runtime-main.32881f5e.js",
+    "runtime-main.js.map": "/bidemi/static/js/runtime-main.32881f5e.js.map",
+    "static/js/2.62303155.chunk.js": "/bidemi/static/js/2.62303155.chunk.js",
+    "static/js/2.62303155.chunk.js.map": "/bidemi/static/js/2.62303155.chunk.js.map",
+    "index.html": "/bidemi/index.html",
+    "precache-manifest.9e980c6eb66e1b3203edd5be9dc8942e.js": "/bidemi/precache-manifest.9e980c6eb66e1b3203edd5be9dc8942e.js",
+    "service-worker.js": "/bidemi/service-worker.js",
+    "static/css/main.6a0abad0.chunk.css.map": "/bidemi/static/css/main.6a0abad0.chunk.css.map",
+    "static/media/1.jpg": "/bidemi/static/media/1.200356c3.jpg",
+    "static/media/2.png": "/bidemi/static/media/2.17212d27.png",
+    "static/media/3.jpg": "/bidemi/static/media/3.b85d07ca.jpg",
+    "static/media/mac.jpg": "/bidemi/static/media/mac.efd6830c.jpg",
+    "static/media/samsung.jpg": "/bidemi/static/media/samsung.4c3bb815.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32881f5e.js",
+    "static/js/2.62303155.chunk.js",
+    "static/css/main.6a0abad0.chunk.css",
+    "static/js/main.0285368d.chunk.js"
+  ]
+}
