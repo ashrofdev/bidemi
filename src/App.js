@@ -163,7 +163,6 @@ class App extends Component {
               <Now onRouteChange={this.onRouteChange}/>: null
           }
           
-          <Contact />
           <Footer/>
         </div>
       </div>

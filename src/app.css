@@ -28,6 +28,7 @@ img {
 .App .content {
     height: 100vh;
     overflow: scroll;
+    
 }
 button {
     outline: none;
@@ -69,6 +70,15 @@ figure img {
 @media only screen and (max-width: 1000px) {
     html {
         font-size: 55.52%;
+    }
+    
+}
+@media only screen and (max-width: 880px) {
+    .App {
+        display: block;
+    }
+    .App .side_bar {
+        display: none;
     }
     
 }
