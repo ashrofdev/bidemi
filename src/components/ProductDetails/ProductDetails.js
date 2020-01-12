@@ -2,7 +2,7 @@ import React from 'react';
 import './details.css'
 import Slide from 'react-reveal/Fade'
 
-const ProductDetails = ({product, back}) => {
+const ProductDetails = ({product, back, onRouteChange}) => {
     console.log(product)
     return (
         <div className="product_details">
@@ -24,8 +24,8 @@ const ProductDetails = ({product, back}) => {
                     <div className="bottom">
                         <h3>{product.name}</h3>
                         <div>
-                        <button onClick={back} className="back">BACK</button>
-                        <button>BUY NOW</button>
+                        <button onClick={()=>onRouteChange('home')} className="back">BACK</button>
+                        <button onClick={()=>onRouteChange('buyNow')}>BUY NOW</button>
                         </div>
                     </div>
                 </div>

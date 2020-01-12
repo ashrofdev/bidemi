@@ -1,0 +1,20 @@
+.buy_now {
+    padding: 5rem 0;
+    display: grid;
+    background-color: rgba(36, 35, 35, 0.459);
+    grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(8rem, 14rem)) minmax(2rem, 1fr);
+}
+.buy_now .content {
+    grid-column: 2/8;
+}
+.content .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding-top: 2rem;
+}
+.form input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+}

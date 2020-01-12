@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import Products from './components/Products/Products';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import Bar from './components/Side_bar/Bar';
+import Now from './components/Buy_now/Now';
 
 class App extends Component {
   state = {
@@ -88,7 +89,7 @@ class App extends Component {
           brand: 'Samsung'
         }
       ],
-      clickedProduct: false,
+      route: 'home',
       product: {},
       search: '',
       filteredPrducts: []
@@ -115,12 +116,12 @@ class App extends Component {
   renderProduct = (product) => {
     this.setState(
       {
-        product,
-        clickedProduct: true
+        product
       })
+      this.onRouteChange('details')
   }
-  back = () => {
-    this.setState({clickedProduct: false})
+  onRouteChange = (route) => {
+    this.setState({route})
   }
 
   onSearch = (value) => {
@@ -154,9 +155,12 @@ class App extends Component {
         <div className="content">
           <Header onSearch={this.onSearch}/>
           {
-            this.state.clickedProduct?
-             <ProductDetails product={this.state.product} back={this.back}/>:
-            <Products products={filteredPrducts} renderProduct={this.renderProduct}/>
+            this.state.route === 'details'?
+             <ProductDetails onRouteChange={this.onRouteChange} product={this.state.product} back={this.back}/>
+             : this.state.route === 'home'?
+              <Products onRouteChange={this.onRouteChange} products={filteredPrducts} renderProduct={this.renderProduct}/>
+              : this.state.route === 'buyNow'?
+              <Now onRouteChange={this.onRouteChange}/>: null
           }
           
           <Contact />
