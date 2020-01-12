@@ -29,7 +29,7 @@ const Header = ({onSearch}) => {
                 </Slider>
                 <div className="bottom_row">
                     {/* <nav>
-                        navigation
+                        naviga
 
                     </nav> */}
                     <input onChange={(e)=>onSearch(e.target.value)} placeholder="🔎 Search..." className="search_box"/>
