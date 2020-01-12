@@ -91,6 +91,7 @@ class App extends Component {
       clickedProduct: false,
       product: {},
       search: '',
+      filteredPrducts: []
   }
   componentDidMount(){
     

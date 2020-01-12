@@ -1,0 +1,27 @@
+.side_bar .heading {
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    padding-top: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem;
+}
+
+.side_bar .list {
+    display: flex;
+    flex-direction: column;
+}
+.list h3 {
+    padding: 1rem;
+    background-color: black;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+}
+.list label {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+label input {
+    margin-right: 1rem;
+    outline: black
+}
