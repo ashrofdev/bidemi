@@ -80,9 +80,21 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .products .content {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+    .header .pcl {
+        position: relative;
+        padding-right: 0;
+        text-align: center;
+        margin: 0;
+    }
+    .pcl h1 {
+        margin: 0;
+    }
+    .header .slider {
+        width: 10rem;
+    }
+    .header .slider .slide img {
+        width: 100%;
+        margin: auto;
     }
     
 }
