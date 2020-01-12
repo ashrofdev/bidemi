@@ -88,7 +88,8 @@ class App extends Component {
         }
       ],
       clickedProduct: false,
-      product: {}
+      product: {},
+      search: '',
   }
   componentDidMount(){
     
@@ -120,12 +121,17 @@ class App extends Component {
     this.setState({clickedProduct: false})
   }
 
+  onSearch = (value) => {
+    this.setState({search: value})
+  }
   
   render() {
 
     const filteredPrducts = this.state.products.filter(item=>{
-      
+      return item.name.toLowerCase().includes(this.state.search)
     })
+    console.log(filteredPrducts)
+
     
     return (
       <div className="App">
@@ -133,11 +139,11 @@ class App extends Component {
           side bar
         </div>
         <div className="content">
-          <Header/>
+          <Header onSearch={this.onSearch}/>
           {
             this.state.clickedProduct?
              <ProductDetails product={this.state.product} back={this.back}/>:
-            <Products products={this.state.products} renderProduct={this.renderProduct}/>
+            <Products products={filteredPrducts} renderProduct={this.renderProduct}/>
           }
           
           <Contact />

@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick'
 import './head.css'
 
-const Header = () => {
+const Header = ({onSearch}) => {
     const settings = {
         dots: false,
         infinite:true,
@@ -12,7 +12,10 @@ const Header = () => {
     return (
         <div className="header">
             <div className="container">
-                <h1>Nameless</h1>
+                <div className="pcl">
+                    <h1>PCL</h1>
+                    <p>Philip Computer Limited</p>
+                </div>
                 <Slider className="slider" {...settings}>
                     <div className="slide">
                     <img src={require('../img/1.jpg')}/>
@@ -29,7 +32,7 @@ const Header = () => {
                         navigation
 
                     </nav>
-                    <input placeholder="🔎 Search..." className="search_box"/>
+                    <input onChange={(e)=>onSearch(e.target.value)} placeholder="🔎 Search..." className="search_box"/>
                 </div>
             </div>
         </div>
