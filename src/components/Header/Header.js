@@ -28,10 +28,10 @@ const Header = ({onSearch}) => {
                     </div>
                 </Slider>
                 <div className="bottom_row">
-                    <nav>
+                    {/* <nav>
                         navigation
 
-                    </nav>
+                    </nav> */}
                     <input onChange={(e)=>onSearch(e.target.value)} placeholder="🔎 Search..." className="search_box"/>
                 </div>
             </div>

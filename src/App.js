@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Products from './components/Products/Products';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import Bar from './components/Side_bar/Bar';
 
 class App extends Component {
   state = {
@@ -136,7 +137,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="side_bar">
-          side bar
+          <Bar/>
         </div>
         <div className="content">
           <Header onSearch={this.onSearch}/>
