@@ -94,7 +94,7 @@ class App extends Component {
       filteredPrducts: []
   }
   componentDidMount(){
-    
+    this.setState({filteredPrducts: this.state.products})
 
   }
   authenticate = () => {
@@ -126,10 +126,21 @@ class App extends Component {
   onSearch = (value) => {
     this.setState({search: value})
   }
+  filter = (val) =>{
+    if (val !== 'all') {
+      console.log(val)
+      const items = this.state.products.filter(e=>{
+        return e.brand.toLowerCase().includes(val.toLowerCase())
+      })
+      this.setState({filteredPrducts: items})
+    } else {
+      this.setState({filteredPrducts: this.state.products})
+    }
+  }
   
   render() {
 
-    const filteredPrducts = this.state.products.filter(item=>{
+    const filteredPrducts = this.state.filteredPrducts.filter(item=>{
       return item.name.toLowerCase().includes(this.state.search)
     })
     console.log(filteredPrducts)
@@ -138,7 +149,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="side_bar">
-          <Bar/>
+          <Bar filter={this.filter}/>
         </div>
         <div className="content">
           <Header onSearch={this.onSearch}/>
