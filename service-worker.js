@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bidemi/precache-manifest.0d357ba3d6daa8d26bfc86854a66b3ca.js"
+  "/bidemi/precache-manifest.6fc0682f78770c10411fbc3332d06847.js"
 );
 
 self.addEventListener('message', (event) => {
