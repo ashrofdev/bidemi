@@ -43,10 +43,8 @@
     margin-bottom: 4rem;
     margin-left: -1rem;
     font-size: 2rem;
-    background-color: black;
     padding: 2rem 3rem;
     border: 5px dotted white;
-    box-shadow: 2px 2px 1rem black;
     animation: price 2s infinite ease-in-out alternate;
 }
 .product_details button {
