@@ -41,5 +41,11 @@
       "last 1 safari version"
     ]
   },
+  "hosting": {
+    "site": "pclimited",
+    "public": "public"
+    
+  },
+  
   "homepage": "https://ashrofdev.github.io/bidemi"
 }

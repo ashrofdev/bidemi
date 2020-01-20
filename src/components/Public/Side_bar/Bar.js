@@ -1,11 +1,11 @@
 import React from 'react';
 import './bar.css'
 
-const Bar = ({filter}) => {
+const Bar = ({filter, toAdmin}) => {
     
     return (
         <div>
-            <h2 className="heading">PCL</h2>
+            <h2 onClick={()=>toAdmin('admin')} className="heading">PCL</h2>
             <div className="list">
                 <h3>BRAND</h3>
                 <label>

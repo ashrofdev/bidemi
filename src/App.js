@@ -4,18 +4,24 @@ import './app.css'
 import { firebaseDB, storage } from './Server';
 import { scroller } from 'react-scroll'
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Products from './components/Products/Products';
-import ProductDetails from './components/ProductDetails/ProductDetails';
-import Bar from './components/Side_bar/Bar';
-import Now from './components/Buy_now/Now';
+import Header from './components/Public/Header/Header';
+import Footer from './components/Public/Footer/Footer';
+import Products from './components/Public/Products/Products';
+import ProductDetails from './components/Public/ProductDetails/ProductDetails';
+import Bar from './components/Public/Side_bar/Bar';
+import Now from './components/Public/Buy_now/Now';
+import PopUp from './components/Public/popUp/PopUp'
+import Admin from './components/Admin/Admin'
+
+
+
+
 
 class App extends Component {
   state = {
       products: [
         {
-          name: 'Hourse Power (Hp)',
+          name: 'Horse Power (Hp)',
           img: 'img/1.jpg',
           ram: '13GB of RAM',
           memory: '900GB SSD of space',
@@ -88,13 +94,19 @@ class App extends Component {
           brand: 'Samsung'
         }
       ],
+      mainRoute: 'home',
       route: 'home',
       product: {},
       search: '',
-      filteredPrducts: []
+      filteredPrducts: [],
+      userData: '',
+      popUp: false
   }
   componentDidMount(){
     this.setState({filteredPrducts: this.state.products})
+    firebaseDB.ref().once('value').then((snaphot)=>{
+      console.log(snaphot.val())
+    })
 
   }
   authenticate = () => {
@@ -122,6 +134,9 @@ class App extends Component {
   onRouteChange = (route) => {
     this.setState({route})
   }
+  onMainRouteChange = (route) => {
+    this.setState({mainRoute: route})
+  }
 
   onSearch = (value) => {
     this.setState({search: value})
@@ -137,6 +152,38 @@ class App extends Component {
       this.setState({filteredPrducts: this.state.products})
     }
   }
+
+  saveData = () => {
+    this.setState(
+      {
+        userData: {
+          lastname: document.querySelector('.lastname').value,
+          firstname: document.querySelector('.firstname').value,
+          email: document.querySelector('.mail').value,
+          phone: document.querySelector('.phone').value,
+          address: document.querySelector('.address').value
+      },
+        popUp: true
+      })
+    console.log(this.state.userData)
+  }
+
+  editUserData = () => {
+    this.setState({popUp: false})
+  }
+  onProceedPurchase = async () => {
+    
+    alert('Sending')
+    await firebaseDB.ref('purchases').push().set({
+      userData: this.state.userData,
+      product: this.state.product
+    })
+    alert('sent')
+    console.log({
+      userData: this.state.userData,
+      productDetails: this.state.product
+    })
+  }
   
   render() {
 
@@ -148,22 +195,34 @@ class App extends Component {
     
     return (
       <div className="App">
-        <div className="side_bar">
-          <Bar filter={this.filter}/>
-        </div>
-        <div className="content">
-          <Header onSearch={this.onSearch}/>
-          {
-            this.state.route === 'details'?
-             <ProductDetails onRouteChange={this.onRouteChange} product={this.state.product} back={this.back}/>
-             : this.state.route === 'home'?
-              <Products onRouteChange={this.onRouteChange} products={filteredPrducts} renderProduct={this.renderProduct}/>
-              : this.state.route === 'buyNow'?
-              <Now onRouteChange={this.onRouteChange}/>: null
-          }
-          
-          <Footer/>
-        </div>
+        {
+          this.state.mainRoute !== 'admin'?
+          <div className="side_bar">
+            <Bar toAdmin={this.onMainRouteChange} filter={this.filter}/>
+          </div>:null
+        }
+        {
+          this.state.mainRoute === 'home'?
+          <div className="content">
+            <Header onSearch={this.onSearch}/>
+            {
+              this.state.route === 'details'?
+              <ProductDetails onRouteChange={this.onRouteChange} product={this.state.product} back={this.back}/>
+              : this.state.route === 'home'?
+                <Products onRouteChange={this.onRouteChange} products={filteredPrducts} renderProduct={this.renderProduct}/>
+                : this.state.route === 'buyNow'?
+                <Now popUp={this.state.popUp} saveData={this.saveData} onRouteChange={this.onRouteChange}/>: null
+
+            }
+              { this.state.popUp ?
+                <PopUp purchaseProduct={this.onProceedPurchase} userData={this.state.userData} edit={this.editUserData}/>: null}
+            
+            
+            <Footer/>
+          </div>:
+          this.state.mainRoute === 'admin'?
+            <Admin/>: null
+        }
       </div>
     );
   }

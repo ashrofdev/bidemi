@@ -4,15 +4,15 @@ import 'firebase/database'
 import 'firebase/storage'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCGoZL7tKedjVOPbAZ4_e86hR7W4uriyuY",
-    authDomain: "awe-ch.firebaseapp.com",
-    databaseURL: "https://awe-ch.firebaseio.com",
-    projectId: "awe-ch",
-    storageBucket: "awe-ch.appspot.com",
-    messagingSenderId: "734845123255",
-    appId: "1:734845123255:web:78917230aab03288226b32",
-    measurementId: "G-SRDTGZ5MF3"
-  };
+  apiKey: "AIzaSyBuF8hPZLR2wH9o_3DmsuLBpCfCSPxyEOE",
+  authDomain: "pclimited-b5ee3.firebaseapp.com",
+  databaseURL: "https://pclimited-b5ee3.firebaseio.com",
+  projectId: "pclimited-b5ee3",
+  storageBucket: "pclimited-b5ee3.appspot.com",
+  messagingSenderId: "75498064754",
+  appId: "1:75498064754:web:0d562278e0e068e506ebeb",
+  measurementId: "G-SQFZR8X3SF"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 

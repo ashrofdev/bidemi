@@ -4,6 +4,7 @@
     padding-top: 2rem;
     border-bottom: 2px solid white;
     padding-bottom: 1rem;
+    cursor: pointer;
 }
 
 .side_bar .list {

@@ -1,0 +1,36 @@
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 3rem;
+    width: 45vw;
+    z-index: 100000;
+    box-shadow: 5px 5px 1rem black;
+}
+.popup h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.popup div {
+    display: flex;
+}
+.popup div h3 {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.popup .btns {
+    transform: translateX(70%);
+}
+.popup .btns button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    background-color: transparent;
+    transition: all .4s;
+}
+.popup .btns button:hover {
+    background-color: black;
+    color: white;
+}
