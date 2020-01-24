@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bidemi/static/css/main.6a0abad0.chunk.css",
-    "main.js": "/bidemi/static/js/main.7aea2e30.chunk.js",
-    "main.js.map": "/bidemi/static/js/main.7aea2e30.chunk.js.map",
+    "main.css": "/bidemi/static/css/main.2707d01d.chunk.css",
+    "main.js": "/bidemi/static/js/main.e852ef45.chunk.js",
+    "main.js.map": "/bidemi/static/js/main.e852ef45.chunk.js.map",
     "runtime-main.js": "/bidemi/static/js/runtime-main.32881f5e.js",
     "runtime-main.js.map": "/bidemi/static/js/runtime-main.32881f5e.js.map",
-    "static/js/2.62303155.chunk.js": "/bidemi/static/js/2.62303155.chunk.js",
-    "static/js/2.62303155.chunk.js.map": "/bidemi/static/js/2.62303155.chunk.js.map",
+    "static/js/2.8256c3b4.chunk.js": "/bidemi/static/js/2.8256c3b4.chunk.js",
+    "static/js/2.8256c3b4.chunk.js.map": "/bidemi/static/js/2.8256c3b4.chunk.js.map",
     "index.html": "/bidemi/index.html",
-    "precache-manifest.208f6e0ab702717b3833726ed1708296.js": "/bidemi/precache-manifest.208f6e0ab702717b3833726ed1708296.js",
+    "precache-manifest.89b88192891aa55037c5244b30eecea3.js": "/bidemi/precache-manifest.89b88192891aa55037c5244b30eecea3.js",
     "service-worker.js": "/bidemi/service-worker.js",
-    "static/css/main.6a0abad0.chunk.css.map": "/bidemi/static/css/main.6a0abad0.chunk.css.map",
+    "static/css/main.2707d01d.chunk.css.map": "/bidemi/static/css/main.2707d01d.chunk.css.map",
     "static/media/1.jpg": "/bidemi/static/media/1.200356c3.jpg",
     "static/media/2.png": "/bidemi/static/media/2.17212d27.png",
     "static/media/3.jpg": "/bidemi/static/media/3.b85d07ca.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.32881f5e.js",
-    "static/js/2.62303155.chunk.js",
-    "static/css/main.6a0abad0.chunk.css",
-    "static/js/main.7aea2e30.chunk.js"
+    "static/js/2.8256c3b4.chunk.js",
+    "static/css/main.2707d01d.chunk.css",
+    "static/js/main.e852ef45.chunk.js"
   ]
 }
