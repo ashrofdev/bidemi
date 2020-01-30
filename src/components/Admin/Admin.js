@@ -7,6 +7,7 @@ import './admin.css'
 
 class Admin extends Component {
     state = {
+        route: 'admin',
         file: '',
         imgID: '',
         orderedProducts: [
@@ -67,19 +68,30 @@ class Admin extends Component {
             imgID: new Date().getMilliseconds()
         })
     }
+    onRouteChange = (route) => {
+        this.setState({route})
+    }
 
     render() {
 
         
 
         return (
-            <Fade>
-                <div className="admin">
-                    ADMIN PAGE
-                    <Sell upload={this.uploadImg} sell={this.deployProduct}/>
-                    <Orders orders={this.state.orderedProducts}/>
-                </div>
-            </Fade>
+            <div className="admin">
+                {
+                    this.state.route === 'admin'?
+                    <Fade top>
+                        <div className="cta">
+                            <button onClick={()=>this.onRouteChange('sell')}>SELL</button>
+                            <button onClick={()=>this.onRouteChange('orders')}>ORDERS</button>
+                        </div>
+                    </Fade>
+                    :this.state.route === 'sell'?
+                    <Sell back={this.onRouteChange} upload={this.uploadImg} sell={this.deployProduct}/>
+                    :this.state.route === 'orders'?
+                    <Orders back={this.onRouteChange} orders={this.state.orderedProducts}/>:null
+                }
+            </div>
         );
     }
 }

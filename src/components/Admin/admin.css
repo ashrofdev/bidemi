@@ -1,3 +1,31 @@
 .admin {
     grid-column: 1/-1;
 }
+.admin .cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10rem;
+}
+.admin .cta button {
+    font-size: 3rem;
+    width: 20rem;
+    height: 10rem;
+    border: 1px solid currentColor;
+}
+.admin .a_back {
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 1px solid currentColor;
+    transition: all .4s;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.admin .a_back:hover {
+    background-color: black;
+    color: white;
+}

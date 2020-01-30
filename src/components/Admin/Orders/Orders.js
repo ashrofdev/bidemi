@@ -1,7 +1,8 @@
 import React from 'react';
 import './order.css'
+import Slide from 'react-reveal/Slide'
 
-const Orders = ({orders}) => {
+const Orders = ({orders, back}) => {
     const order = orders.map((item, i) => {
         console.log(item)
         return (
@@ -13,9 +14,12 @@ const Orders = ({orders}) => {
         )
     })
     return (
-        <div className="orders">
-            {order}
-        </div>
+        <Slide right>
+            <div className="orders">
+                {order}
+                <button onClick={()=>back('admin')} className="a_back">BACK</button>
+            </div>
+        </Slide>
     );
 };
 
