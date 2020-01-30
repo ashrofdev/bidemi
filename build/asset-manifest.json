@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a0abad0.chunk.css",
-    "main.js": "/static/js/main.7aea2e30.chunk.js",
-    "main.js.map": "/static/js/main.7aea2e30.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8609d9bf.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8609d9bf.js.map",
-    "static/js/2.74e511f5.chunk.js": "/static/js/2.74e511f5.chunk.js",
-    "static/js/2.74e511f5.chunk.js.map": "/static/js/2.74e511f5.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.30f564fb916805e66acdab775fdd44af.js": "/precache-manifest.30f564fb916805e66acdab775fdd44af.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.6a0abad0.chunk.css.map": "/static/css/main.6a0abad0.chunk.css.map",
-    "static/media/1.jpg": "/static/media/1.200356c3.jpg",
-    "static/media/2.png": "/static/media/2.17212d27.png",
-    "static/media/3.jpg": "/static/media/3.b85d07ca.jpg",
-    "static/media/mac.jpg": "/static/media/mac.efd6830c.jpg",
-    "static/media/samsung.jpg": "/static/media/samsung.4c3bb815.jpg"
+    "main.css": "/bidemi/static/css/main.2707d01d.chunk.css",
+    "main.js": "/bidemi/static/js/main.e852ef45.chunk.js",
+    "main.js.map": "/bidemi/static/js/main.e852ef45.chunk.js.map",
+    "runtime-main.js": "/bidemi/static/js/runtime-main.32881f5e.js",
+    "runtime-main.js.map": "/bidemi/static/js/runtime-main.32881f5e.js.map",
+    "static/js/2.8256c3b4.chunk.js": "/bidemi/static/js/2.8256c3b4.chunk.js",
+    "static/js/2.8256c3b4.chunk.js.map": "/bidemi/static/js/2.8256c3b4.chunk.js.map",
+    "index.html": "/bidemi/index.html",
+    "precache-manifest.89b88192891aa55037c5244b30eecea3.js": "/bidemi/precache-manifest.89b88192891aa55037c5244b30eecea3.js",
+    "service-worker.js": "/bidemi/service-worker.js",
+    "static/css/main.2707d01d.chunk.css.map": "/bidemi/static/css/main.2707d01d.chunk.css.map",
+    "static/media/1.jpg": "/bidemi/static/media/1.200356c3.jpg",
+    "static/media/2.png": "/bidemi/static/media/2.17212d27.png",
+    "static/media/3.jpg": "/bidemi/static/media/3.b85d07ca.jpg",
+    "static/media/mac.jpg": "/bidemi/static/media/mac.efd6830c.jpg",
+    "static/media/samsung.jpg": "/bidemi/static/media/samsung.4c3bb815.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8609d9bf.js",
-    "static/js/2.74e511f5.chunk.js",
-    "static/css/main.6a0abad0.chunk.css",
-    "static/js/main.7aea2e30.chunk.js"
+    "static/js/runtime-main.32881f5e.js",
+    "static/js/2.8256c3b4.chunk.js",
+    "static/css/main.2707d01d.chunk.css",
+    "static/js/main.e852ef45.chunk.js"
   ]
 }

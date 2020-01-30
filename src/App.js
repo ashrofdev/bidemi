@@ -94,7 +94,7 @@ class App extends Component {
           brand: 'Samsung'
         }
       ],
-      mainRoute: 'home',
+      mainRoute: 'admin',
       route: 'home',
       product: {},
       search: '',
