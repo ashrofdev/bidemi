@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "140ea470ef89350e33fa1a6a82890ad9",
+    "revision": "80121688929fc99976a0d930f64f3b79",
     "url": "/bidemi/index.html"
   },
   {
-    "revision": "0847486fb561a6b3085f",
-    "url": "/bidemi/static/css/main.2707d01d.chunk.css"
+    "revision": "debde4e1ccbf57b0eb34",
+    "url": "/bidemi/static/css/main.73e1ac5c.chunk.css"
   },
   {
-    "revision": "cced8bf3cc4fc9191330",
-    "url": "/bidemi/static/js/2.8256c3b4.chunk.js"
+    "revision": "e78a5ad4333131240c54",
+    "url": "/bidemi/static/js/2.73e7ea3f.chunk.js"
   },
   {
-    "revision": "0847486fb561a6b3085f",
-    "url": "/bidemi/static/js/main.e852ef45.chunk.js"
+    "revision": "debde4e1ccbf57b0eb34",
+    "url": "/bidemi/static/js/main.3099963d.chunk.js"
   },
   {
     "revision": "b278bbdbf0ba6f4d7abc",
