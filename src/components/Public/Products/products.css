@@ -19,9 +19,13 @@
     
 }
 @media only screen and (max-width: 480px) {
+    .products {
+        display: block;
+        padding: 1.5rem;
+    }
     .products .content {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+        grid-gap: 1.5rem;
     }
     
 }

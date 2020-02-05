@@ -79,22 +79,29 @@
     
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
+    .header {
+        display: block;
+    }
     .header .pcl {
         position: relative;
         padding-right: 0;
         text-align: center;
         margin: 0;
+        height: max-content;
+        width: max-content;
     }
     .pcl h1 {
         margin: 0;
     }
     .header .slider {
-        width: 10rem;
+        height: auto;
+        width: 70vw;
+        margin-left: 0;
     }
     .header .slider .slide img {
-        width: 100%;
-        margin: auto;
+        height: auto;
+        width: 70vw;
     }
     
 }
