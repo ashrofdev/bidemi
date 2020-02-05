@@ -82,14 +82,17 @@
 @media only screen and (max-width: 680px) {
     .header {
         display: block;
+        height: auto;
     }
+    
     .header .pcl {
         position: relative;
         padding-right: 0;
         text-align: center;
-        margin: 0;
         height: max-content;
         width: max-content;
+        margin: auto;
+        padding-bottom: 2rem;
     }
     .pcl h1 {
         margin: 0;
@@ -98,10 +101,17 @@
         height: auto;
         width: 70vw;
         margin-left: 0;
+        margin: 3rem auto;
     }
     .header .slider .slide img {
         height: auto;
         width: 70vw;
     }
+    .bottom_row  {
+        align-self: center;
+        justify-self: flex-end;
+        margin-top: 2rem;
+    }
+   
     
 }
