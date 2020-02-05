@@ -71,3 +71,21 @@
     color: white;
     box-shadow: 3px 5px 1rem black;
 }
+
+
+@media only screen and (max-width: 485px) {
+    .product_details {
+        display: block;
+        padding: 2rem;
+    }
+    .product_details .top, .product_details .bottom {
+        display: block;
+    }
+    .product_details .details .price_tag {
+        animation: none;
+        margin: 1rem;
+        font-weight: 700;
+        font-size: 3rem;
+        display: inline-block;
+    }
+}

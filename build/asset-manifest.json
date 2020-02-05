@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bidemi/static/css/main.73e1ac5c.chunk.css",
+    "main.css": "/bidemi/static/css/main.6cde05df.chunk.css",
     "main.js": "/bidemi/static/js/main.3099963d.chunk.js",
     "main.js.map": "/bidemi/static/js/main.3099963d.chunk.js.map",
     "runtime-main.js": "/bidemi/static/js/runtime-main.32881f5e.js",
@@ -8,9 +8,9 @@
     "static/js/2.73e7ea3f.chunk.js": "/bidemi/static/js/2.73e7ea3f.chunk.js",
     "static/js/2.73e7ea3f.chunk.js.map": "/bidemi/static/js/2.73e7ea3f.chunk.js.map",
     "index.html": "/bidemi/index.html",
-    "precache-manifest.fd41f29a645e8f55122f6c9df5732f63.js": "/bidemi/precache-manifest.fd41f29a645e8f55122f6c9df5732f63.js",
+    "precache-manifest.4891c1b8ff99a97c8bdc75665de567b7.js": "/bidemi/precache-manifest.4891c1b8ff99a97c8bdc75665de567b7.js",
     "service-worker.js": "/bidemi/service-worker.js",
-    "static/css/main.73e1ac5c.chunk.css.map": "/bidemi/static/css/main.73e1ac5c.chunk.css.map",
+    "static/css/main.6cde05df.chunk.css.map": "/bidemi/static/css/main.6cde05df.chunk.css.map",
     "static/media/1.jpg": "/bidemi/static/media/1.200356c3.jpg",
     "static/media/2.png": "/bidemi/static/media/2.17212d27.png",
     "static/media/3.jpg": "/bidemi/static/media/3.b85d07ca.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.32881f5e.js",
     "static/js/2.73e7ea3f.chunk.js",
-    "static/css/main.73e1ac5c.chunk.css",
+    "static/css/main.6cde05df.chunk.css",
     "static/js/main.3099963d.chunk.js"
   ]
 }
