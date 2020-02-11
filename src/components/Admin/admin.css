@@ -1,5 +1,28 @@
+@keyframes admin {
+    0% {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.623)),url(../Public/img/mac.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+    50% {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.623)),url(../Public/img/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    100% {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.623)),url(../Public/img/3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+}
+
 .admin {
     grid-column: 1/-1;
+    animation: admin infinite 7s alternate-reverse;
+    height: 100vh;
 }
 .admin .cta {
     display: flex;
