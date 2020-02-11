@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 3rem;
-    width: 45vw;
+    width: 50vw;
     z-index: 100000;
     box-shadow: 5px 5px 1rem black;
 }
@@ -33,4 +33,19 @@
 .popup .btns button:hover {
     background-color: black;
     color: white;
+}
+
+@media only screen and (max-width: 955px) {
+    .popup .btns {
+        transform: translateX(50%);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .popup .btns {
+        transform: translateX(0%);
+    }
+    .popup {
+        top: 20%;
+        left: 10%;
+    }
 }
