@@ -21,7 +21,7 @@
 
 .admin {
     grid-column: 1/-1;
-    animation: admin infinite 7s alternate-reverse;
+    animation: admin infinite 3s alternate-reverse;
     height: 100vh;
 }
 .admin .cta {
