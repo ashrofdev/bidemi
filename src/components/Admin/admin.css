@@ -6,7 +6,7 @@
         background-position: left;
     }
     50% {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.623)),url(../Public/img/1.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.623)),url(../Public/img/1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -21,7 +21,7 @@
 
 .admin {
     grid-column: 1/-1;
-    animation: admin infinite 3s alternate-reverse;
+    animation: admin infinite 5s alternate-reverse;
     height: 100vh;
 }
 .admin .cta {
