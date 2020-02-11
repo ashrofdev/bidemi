@@ -1,7 +1,8 @@
 .sell {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(2, min-content);
+    grid-gap: 1rem;
+    text-align: center;
 }
 .sell input {
     padding: 1rem;
