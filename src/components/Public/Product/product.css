@@ -4,6 +4,9 @@
     background-color: white;
     height: min-content;
 }
+.product img {
+    height: 15rem;
+}
 .product_name {
     padding: 1rem;
     font-size: 1.4rem;

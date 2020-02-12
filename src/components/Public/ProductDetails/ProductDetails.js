@@ -10,7 +10,7 @@ const ProductDetails = ({product, back, onRouteChange}) => {
                 <div className="content">
                     <div className="top">
                         <figure>
-                            <img src={require(`../${product.img}`)}/>
+                            <img src={product.img}/>
                         </figure>
                         <div className="details">
                             <p>🌫 {product.ram}</p>

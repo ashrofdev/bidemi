@@ -18,7 +18,7 @@ class Admin extends Component {
             snapshot.forEach(item => {
                 orders.push(item.val())
             });
-            console.log(snapshot.val(), '.........')
+            console.log(orders, '.........')
         })
         this.setState({orderedProducts: orders})
         console.log(this.state.orderedProducts, 'ooorororororor')

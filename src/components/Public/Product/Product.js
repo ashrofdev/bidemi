@@ -10,7 +10,7 @@ const Product = ({product, renderProduct}) => {
     return (
         <Slide left>
             <div className="product">
-                <img src={require(`../${product.img}`)}/>
+                <img src={product.img}/>
                 <h4 className="product_name">{product.name}</h4>
                 <p className="width">🖥 {product.width}</p>
                 <p className="intel">🧮 {product.core}</p>

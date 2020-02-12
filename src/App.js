@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './app.css'
 
 import { firebaseDB, storage } from './Server';
-import { scroller } from 'react-scroll'
 
 import Header from './components/Public/Header/Header';
 import Footer from './components/Public/Footer/Footer';
@@ -31,31 +30,30 @@ class App extends Component {
   }
   componentDidMount(){
     const products = []
-    firebaseDB.ref('products').once('value').then((snaphot)=>{
-      console.log(snaphot.val())
-      snaphot.forEach(item=>{
-        products.push(item.val())
-      })
-      this.setState({products: products})
+    firebaseDB.ref('products').once('value').then((snapshot)=>{
+        snapshot.forEach(item => {
+            products.push(item.val())
+        });
+        console.log(products, '.........')
+        this.setState({products: products})
     })
-    console.log(products)
     console.log(this.state.products)
 
   }
-  authenticate = () => {
-    console.log('222')
-    const pass = prompt('ENTER PASSWORD')
-    if (pass === this.state.password) {
-        document.querySelector('.jobs').classList.add('show')
-        scroller.scrollTo('jobs', {
-            duration: 1000,
-            delay: 0,
-            smooth: true
-        })
-    } else {
-      alert('wrong password')
-    }
-  }
+  // authenticate = () => {
+  //   console.log('222')
+  //   const pass = prompt('ENTER PASSWORD')
+  //   if (pass === this.state.password) {
+  //       document.querySelector('.jobs').classList.add('show')
+  //       scroller.scrollTo('jobs', {
+  //           duration: 1000,
+  //           delay: 0,
+  //           smooth: true
+  //       })
+  //   } else {
+  //     alert('wrong password')
+  //   }
+  // }
 
   renderProduct = (product) => {
     this.setState(
