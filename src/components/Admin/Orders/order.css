@@ -10,6 +10,11 @@
     padding-left: .3rem;
     grid-gap: 1.5rem;
 }
+.order img {
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
 .order p {
     color: white;
 }

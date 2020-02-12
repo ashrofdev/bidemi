@@ -2,12 +2,14 @@ import React from 'react';
 import './order.css'
 import Slide from 'react-reveal/Slide'
 
+// document.querySelector('img').requestFullscreen
+
 const Orders = ({orders, back}) => {
     const order = orders.map((item, i) => {
         console.log(item)
         return (
             <div className="order">
-                <img src={item.product.img}/>
+                <img onClick={(e)=>{e.target.requestFullscreen()}} src={item.product.img}/>
                 <p>Product Name: {item.product.name}</p>
                 <p>Price: {item.product.price}</p>
                 <p>Buyer's name: {item.userData.lastname}</p>
