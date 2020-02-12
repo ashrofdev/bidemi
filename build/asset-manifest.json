@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/bidemi/static/css/main.6a5d57d6.chunk.css",
-    "main.js": "/bidemi/static/js/main.436f0f65.chunk.js",
-    "main.js.map": "/bidemi/static/js/main.436f0f65.chunk.js.map",
+    "main.css": "/bidemi/static/css/main.1bf7dd4e.chunk.css",
+    "main.js": "/bidemi/static/js/main.55149196.chunk.js",
+    "main.js.map": "/bidemi/static/js/main.55149196.chunk.js.map",
     "runtime-main.js": "/bidemi/static/js/runtime-main.32881f5e.js",
     "runtime-main.js.map": "/bidemi/static/js/runtime-main.32881f5e.js.map",
-    "static/js/2.73e7ea3f.chunk.js": "/bidemi/static/js/2.73e7ea3f.chunk.js",
-    "static/js/2.73e7ea3f.chunk.js.map": "/bidemi/static/js/2.73e7ea3f.chunk.js.map",
+    "static/js/2.5e6bb258.chunk.js": "/bidemi/static/js/2.5e6bb258.chunk.js",
+    "static/js/2.5e6bb258.chunk.js.map": "/bidemi/static/js/2.5e6bb258.chunk.js.map",
     "index.html": "/bidemi/index.html",
-    "precache-manifest.1b659654106d511db3bcd2163a3d5bfe.js": "/bidemi/precache-manifest.1b659654106d511db3bcd2163a3d5bfe.js",
+    "precache-manifest.acf36c917b3d7e2514ace622c8d08e5e.js": "/bidemi/precache-manifest.acf36c917b3d7e2514ace622c8d08e5e.js",
     "service-worker.js": "/bidemi/service-worker.js",
-    "static/css/main.6a5d57d6.chunk.css.map": "/bidemi/static/css/main.6a5d57d6.chunk.css.map",
+    "static/css/main.1bf7dd4e.chunk.css.map": "/bidemi/static/css/main.1bf7dd4e.chunk.css.map",
     "static/media/admin.css": "/bidemi/static/media/mac.efd6830c.jpg",
-    "static/media/2.png": "/bidemi/static/media/2.17212d27.png",
-    "static/media/samsung.jpg": "/bidemi/static/media/samsung.4c3bb815.jpg"
+    "static/media/2.png": "/bidemi/static/media/2.17212d27.png"
   },
   "entrypoints": [
     "static/js/runtime-main.32881f5e.js",
-    "static/js/2.73e7ea3f.chunk.js",
-    "static/css/main.6a5d57d6.chunk.css",
-    "static/js/main.436f0f65.chunk.js"
+    "static/js/2.5e6bb258.chunk.js",
+    "static/css/main.1bf7dd4e.chunk.css",
+    "static/js/main.55149196.chunk.js"
   ]
 }
