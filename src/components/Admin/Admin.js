@@ -35,7 +35,7 @@ class Admin extends Component {
                     memory: document.querySelector('.sell_memory').value,
                     core: document.querySelector('.sell_core').value,
                     width: document.querySelector('.sell_width').value,
-                    price: document.querySelector('.sell_price').value,
+                    price: '₦'+document.querySelector('.sell_price').value,
                     brand: document.querySelector('.sell_brand').value,
                 })
             })

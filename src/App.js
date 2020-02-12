@@ -35,7 +35,11 @@ class App extends Component {
             products.push(item.val())
         });
         console.log(products, '.........')
-        this.setState({products: products})
+        this.setState(
+          {
+            filteredPrducts: products,
+            products
+          })
     })
     console.log(this.state.products)
 
@@ -121,7 +125,7 @@ class App extends Component {
   render() {
 
     const filteredPrducts = this.state.filteredPrducts.filter(item=>{
-      return item.name.toLowerCase().includes(this.state.search)
+      return item.name.toLowerCase().includes(this.state.search.toLowerCase())
     })
     console.log(filteredPrducts)
 
@@ -142,7 +146,7 @@ class App extends Component {
               this.state.route === 'details'?
               <ProductDetails onRouteChange={this.onRouteChange} product={this.state.product} back={this.back}/>
               : this.state.route === 'home'?
-                <Products onRouteChange={this.onRouteChange} products={this.state.products} renderProduct={this.renderProduct}/>
+                <Products onRouteChange={this.onRouteChange} products={filteredPrducts} renderProduct={this.renderProduct}/>
                 : this.state.route === 'buyNow'?
                 <Now popUp={this.state.popUp} saveData={this.saveData} onRouteChange={this.onRouteChange}/>: null
 
