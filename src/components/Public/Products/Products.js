@@ -4,6 +4,7 @@ import './products.css'
 import Product from '../Product/Product'
 
 const Products = ({products, renderProduct}) => {
+    console.log(products)
     const product = products.map(product=>{
         return <Product renderProduct={renderProduct} product={product}/>
     })

@@ -10,36 +10,18 @@ class Admin extends Component {
         route: 'admin',
         file: '',
         imgID: '',
-        orderedProducts: [
-            {
-                name: 'Horse Power (Hp)',
-                img: 'img/1.jpg',
-                ram: '13GB of RAM',
-                memory: '900GB SSD of space',
-                core: 'Intel core i5',
-                width: '15-inch retina display',
-                price: 'N450,000',
-                brand: 'Hp'
-              },{
-                name: 'Huawei',
-                img: 'img/3.jpg',
-                ram: '16GB of RAM',
-                memory: '1TB SSD of space',
-                core: 'Intel core i6',
-                width: '15-inch retina display',
-                price: 'N950,000',
-                brand: 'Huawei'
-              },{
-                name: 'Apple macbook pro',
-                img: 'img/mac.jpg',
-                ram: '16GB of RAM',
-                memory: '1TB SSD of space',
-                core: 'Intel core i7',
-                width: '15-inch retina display',
-                price: 'N1,300,000',
-                brand: 'Apple'
-              }
-        ]
+        orderedProducts: [  ]
+    }
+    componentDidMount(){
+        const orders = []
+        firebaseDB.ref('purchases').once('value').then((snapshot)=>{
+            snapshot.forEach(item => {
+                orders.push(item.val())
+            });
+            console.log(snapshot.val(), '.........')
+        })
+        this.setState({orderedProducts: orders})
+        console.log(this.state.orderedProducts, 'ooorororororor')
     }
     deployProduct = async () =>{
 

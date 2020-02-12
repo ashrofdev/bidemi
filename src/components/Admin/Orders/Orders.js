@@ -7,9 +7,14 @@ const Orders = ({orders, back}) => {
         console.log(item)
         return (
             <div className="order">
-                <p>{i+1} >>  Name: {item.name}</p>
-                <p>Price: {item.price}</p>
-                <p>Date: {item.name} 2001</p>
+                <img src={item.product.img}/>
+                <p>Product Name: {item.product.name}</p>
+                <p>Price: {item.product.price}</p>
+                <p>Buyer's name: {item.userData.lastname}</p>
+                <p>Buyer's address: {item.userData.address}</p>
+                <p>Buyer's mail: {item.userData.email}</p>
+                <p>Buyer's no: {item.userData.phone}</p>
+                <p>Date: {item.userData.date}</p>
             </div>
         )
     })

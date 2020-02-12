@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 3rem;
-    width: 50vw;
+    width: 50rem;
     z-index: 100000;
     box-shadow: 5px 5px 1rem black;
 }
@@ -45,7 +45,8 @@
         transform: translateX(0%);
     }
     .popup {
+        width: 70%;
         top: 20%;
-        left: 10%;
+        left: 5%;
     }
 }

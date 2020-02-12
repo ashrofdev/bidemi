@@ -19,80 +19,7 @@ import Admin from './components/Admin/Admin'
 
 class App extends Component {
   state = {
-      products: [
-        {
-          name: 'Horse Power (Hp)',
-          img: 'img/1.jpg',
-          ram: '13GB of RAM',
-          memory: '900GB SSD of space',
-          core: 'Intel core i5',
-          width: '15-inch retina display',
-          price: 'N450,000',
-          brand: 'Hp'
-        },{
-          name: 'Huawei',
-          img: 'img/3.jpg',
-          ram: '16GB of RAM',
-          memory: '1TB SSD of space',
-          core: 'Intel core i6',
-          width: '15-inch retina display',
-          price: 'N950,000',
-          brand: 'Huawei'
-        },{
-          name: 'Apple macbook pro',
-          img: 'img/mac.jpg',
-          ram: '16GB of RAM',
-          memory: '1TB SSD of space',
-          core: 'Intel core i7',
-          width: '15-inch retina display',
-          price: 'N1,300,000',
-          brand: 'Apple'
-        }, {
-          name: 'Samaung lite',
-          img: 'img/samsung.jpg',
-          ram: '16GB of RAM',
-          memory: '700GB SSD of space',
-          core: 'Intel core i6',
-          width: '12-inch retina display',
-          price: 'N700,000',
-          brand: 'Samsung'
-        }, {
-          name: 'Huawei',
-          img: 'img/3.jpg',
-          ram: '16GB of RAM',
-          memory: '1TB SSD of space',
-          core: 'Intel core i6',
-          width: '15-inch retina display',
-          price: 'N950,000',
-          brand: 'Huawei'
-        },  {
-          name: 'Hourse Power (Hp)',
-          img: 'img/1.jpg',
-          ram: '13GB of RAM',
-          memory: '900GB SSD of space',
-          core: 'Intel core i5',
-          width: '15-inch retina display',
-          price: 'N450,000',
-          brand: 'Hp'
-        }, {
-          name: 'Apple macbook pro',
-          img: 'img/mac.jpg',
-          ram: '16GB of RAM',
-          memory: '1TB SSD of space',
-          core: 'Intel core i7',
-          width: '15-inch retina display',
-          price: 'N1,300,000',
-          brand: 'Apple'
-        }, {
-          name: 'Samaung lite',
-          img: 'img/samsung.jpg',
-          ram: '16GB of RAM',
-          memory: '700GB SSD of space',
-          core: 'Intel core i6',
-          width: '12-inch retina display',
-          price: 'N700,000',
-          brand: 'Samsung'
-        }
+      products: [  
       ],
       mainRoute: 'home',
       route: 'home',
@@ -103,10 +30,16 @@ class App extends Component {
       popUp: false
   }
   componentDidMount(){
-    this.setState({filteredPrducts: this.state.products})
-    firebaseDB.ref().once('value').then((snaphot)=>{
+    const products = []
+    firebaseDB.ref('products').once('value').then((snaphot)=>{
       console.log(snaphot.val())
+      snaphot.forEach(item=>{
+        products.push(item.val())
+      })
+      this.setState({products: products})
     })
+    console.log(products)
+    console.log(this.state.products)
 
   }
   authenticate = () => {
@@ -154,6 +87,7 @@ class App extends Component {
   }
 
   saveData = () => {
+    const date = new Date()
     this.setState(
       {
         userData: {
@@ -161,7 +95,8 @@ class App extends Component {
           firstname: document.querySelector('.firstname').value,
           email: document.querySelector('.mail').value,
           phone: document.querySelector('.phone').value,
-          address: document.querySelector('.address').value
+          address: document.querySelector('.address').value,
+          date: `${date.getDay()}-${date.getMonth()+1}-${date.getFullYear()}`
       },
         popUp: true
       })
@@ -209,7 +144,7 @@ class App extends Component {
               this.state.route === 'details'?
               <ProductDetails onRouteChange={this.onRouteChange} product={this.state.product} back={this.back}/>
               : this.state.route === 'home'?
-                <Products onRouteChange={this.onRouteChange} products={filteredPrducts} renderProduct={this.renderProduct}/>
+                <Products onRouteChange={this.onRouteChange} products={this.state.products} renderProduct={this.renderProduct}/>
                 : this.state.route === 'buyNow'?
                 <Now popUp={this.state.popUp} saveData={this.saveData} onRouteChange={this.onRouteChange}/>: null
 
@@ -229,3 +164,4 @@ class App extends Component {
 }
 
 export default App;
+
