@@ -26,9 +26,7 @@ img {
     color: white;
 }
 .App .content {
-    height: 100vh;
-    overflow: scroll;
-    
+    height: 100%;
 }
 button {
     outline: none;

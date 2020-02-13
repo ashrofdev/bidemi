@@ -16,6 +16,20 @@
     font-size: 1.3rem;
     outline: none;
 }
+
+.sell .label {
+    color: white;
+    transition: all .3s ease-in;
+    text-align: left;
+    padding: .2rem .5rem;
+    font-size: 1.2rem;
+    display: block;
+}
+input:placeholder-shown + label {
+    visibility: hidden;
+    text-align: left;
+    transform: translateY(-100%);
+}
 .sell .sell {
     padding: 1rem 2rem;
     background-color: rgb(4, 5, 5);

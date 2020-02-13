@@ -7,7 +7,7 @@ import './admin.css'
 
 class Admin extends Component {
     state = {
-        route: 'admin',
+        route: 'sell',
         file: '',
         imgID: '',
         orderedProducts: [  ]
