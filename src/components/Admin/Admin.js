@@ -7,10 +7,10 @@ import './admin.css'
 
 class Admin extends Component {
     state = {
-        route: 'sell',
+        route: 'admin',
         file: '',
         imgID: '',
-        orderedProducts: [  ]
+        orderedProducts: [  ],
     }
     componentDidMount(){
         const orders = []
@@ -22,9 +22,12 @@ class Admin extends Component {
         })
         this.setState({orderedProducts: orders})
         console.log(this.state.orderedProducts, 'ooorororororor')
-    }
-    deployProduct = async () =>{
 
+    }
+
+    deployProduct = async () =>{
+        this.setState({loader: true})
+        document.querySelector('.loader').classList.add('show')
         await storage.ref().child(`${this.state.imgID}`).put(this.state.file)
         .then((e)=>{
             storage.ref().child(`${this.state.imgID}`).getDownloadURL().then(url => {
@@ -38,7 +41,14 @@ class Admin extends Component {
                     price: '₦'+document.querySelector('.sell_price').value,
                     brand: document.querySelector('.sell_brand').value,
                 })
+            }).catch(()=>{
+                console.log('failed')
+                document.querySelector('.loader').classList.remove('show')
             })
+            document.querySelector('.loader').classList.remove('show')
+        }).catch(()=>{
+            console.log('failed')
+            document.querySelector('.loader').classList.remove('show')
         })
         
         console.log(this.state.file)
@@ -60,6 +70,10 @@ class Admin extends Component {
 
         return (
             <div className="admin">
+                <div className="loader">
+                    <img src={require('./3.gif')}/>
+                    <p>loading...</p>
+                </div>
                 {
                     this.state.route === 'admin'?
                     <Fade top>

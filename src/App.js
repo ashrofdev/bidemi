@@ -20,7 +20,7 @@ class App extends Component {
   state = {
       products: [  
       ],
-      mainRoute: 'admin',
+      mainRoute: 'home',
       route: 'home',
       product: {},
       search: '',
