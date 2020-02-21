@@ -33,6 +33,10 @@
     box-shadow: .6rem .6rem 1rem black;
     transition: all .5s;
 }
+.sucess {
+    background-color: green;
+    font-size: 1.3rem;
+}
 .loader img {
     width: 3rem;
     margin-right: 1rem;

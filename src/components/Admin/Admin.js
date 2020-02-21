@@ -40,15 +40,19 @@ class Admin extends Component {
                     width: document.querySelector('.sell_width').value,
                     price: '₦'+document.querySelector('.sell_price').value,
                     brand: document.querySelector('.sell_brand').value,
+                }).then(()=>{
+                    console.log('sucess')
+                    document.querySelector('.loader').textContent="Deploy Successful"
+                    document.querySelector('.loader').classList.add('sucess')
+                    setTimeout(() => {
+                        document.querySelector('.loader').classList.remove('show')
+                        document.querySelector('.loader').classList.remove('sucess')
+                    }, 5000);
+                }).catch(()=>{
+                    console.log('failed')
+                    document.querySelector('.loader').classList.remove('show')
                 })
-            }).catch(()=>{
-                console.log('failed')
-                document.querySelector('.loader').classList.remove('show')
             })
-            document.querySelector('.loader').classList.remove('show')
-        }).catch(()=>{
-            console.log('failed')
-            document.querySelector('.loader').classList.remove('show')
         })
         
         console.log(this.state.file)

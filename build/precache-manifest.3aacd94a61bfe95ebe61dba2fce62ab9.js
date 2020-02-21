@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18815546eacd352750f78051d90f5a88",
+    "revision": "335857484cd911dee90cc95501789df4",
     "url": "/bidemi/index.html"
   },
   {
-    "revision": "7d07df0021947b7956b6",
-    "url": "/bidemi/static/css/main.1bf7dd4e.chunk.css"
+    "revision": "085d9c4c2152ea591f8b",
+    "url": "/bidemi/static/css/main.e8e7465d.chunk.css"
   },
   {
-    "revision": "c6d7201b944e0f669fc1",
-    "url": "/bidemi/static/js/2.5e6bb258.chunk.js"
+    "revision": "dbe7db09e658d1427119",
+    "url": "/bidemi/static/js/2.a35df1a8.chunk.js"
   },
   {
-    "revision": "7d07df0021947b7956b6",
-    "url": "/bidemi/static/js/main.55149196.chunk.js"
+    "revision": "085d9c4c2152ea591f8b",
+    "url": "/bidemi/static/js/main.89fc8f85.chunk.js"
   },
   {
     "revision": "b278bbdbf0ba6f4d7abc",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b85d07cafa9fca7824d637a59ea78159",
     "url": "/bidemi/static/media/3.b85d07ca.jpg"
+  },
+  {
+    "revision": "cffa9d9d88890cfcd0ae3d6dd7a6efa9",
+    "url": "/bidemi/static/media/3.cffa9d9d.gif"
   },
   {
     "revision": "efd6830c763671e0c6893836b2a9dd7d",
