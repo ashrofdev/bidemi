@@ -53,7 +53,6 @@ class Admin extends Component {
                     document.querySelector('.loader').classList.remove('show')
                 })
             })
-            document.querySelector('.loader').classList.remove('show')
         })
         
         console.log(this.state.file)
