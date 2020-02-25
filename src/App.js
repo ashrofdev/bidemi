@@ -14,8 +14,6 @@ import Admin from './components/Admin/Admin'
 
 
 
-
-
 class App extends Component {
   state = {
       products: [  
@@ -28,6 +26,9 @@ class App extends Component {
       userData: '',
       popUp: false
   }
+
+
+
   componentDidMount(){
     const products = []
     firebaseDB.ref('products').once('value').then((snapshot)=>{
@@ -80,7 +81,7 @@ class App extends Component {
     if (val !== 'all') {
       console.log(val)
       const items = this.state.products.filter(e=>{
-        return e.brand.toLowerCase().includes(val.toLowerCase())
+        return e.category.toLowerCase().includes(val.toLowerCase())
       })
       this.setState({filteredPrducts: items})
     } else {
@@ -164,6 +165,6 @@ class App extends Component {
     );
   }
 }
-
+ 
 export default App;
 

@@ -29,8 +29,12 @@ const Sell = ({sell, upload, back}) => {
                     <label className="label">screen size</label>
                     </div>
                     <div>
-                    <input className="sell_brand" placeholder="manufacturer"/>
-                    <label className="label">manufacturer</label>
+                    <select className="sell_category">
+                        <option>laptop</option>
+                        <option>phone</option>
+                        <option>accessory</option>
+                    </select>
+                    <label className="label">category</label>
                     </div>
                     <div>
                     <input type="number" className="sell_price" placeholder="Prduct price"/>

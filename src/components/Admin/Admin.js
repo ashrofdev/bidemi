@@ -10,7 +10,7 @@ class Admin extends Component {
         route: 'admin',
         file: '',
         imgID: '',
-        orderedProducts: [  ],
+        orderedProducts: [],
     }
     componentDidMount(){
         const orders = []
@@ -39,7 +39,7 @@ class Admin extends Component {
                     core: document.querySelector('.sell_core').value,
                     width: document.querySelector('.sell_width').value,
                     price: '₦'+document.querySelector('.sell_price').value,
-                    brand: document.querySelector('.sell_brand').value,
+                    category: document.querySelector('.sell_brand').value,
                 }).then(()=>{
                     console.log('sucess')
                     document.querySelector('.loader').textContent="Deploy Successful"
@@ -53,6 +53,7 @@ class Admin extends Component {
                     document.querySelector('.loader').classList.remove('show')
                 })
             })
+            document.querySelector('.loader').classList.remove('show')
         })
         
         console.log(this.state.file)

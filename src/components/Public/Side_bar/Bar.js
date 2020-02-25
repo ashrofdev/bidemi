@@ -13,20 +13,16 @@ const Bar = ({filter, toAdmin}) => {
                     All
                 </label>
                 <label>
-                    <input onChange={(e)=>filter(e.target.value)} value="Samsung" name="brand" type="radio"/>
-                    Samsung
+                    <input onChange={(e)=>filter(e.target.value)} value="laptops" name="brand" type="radio"/>
+                    Laptops
                 </label>
                 <label>
-                    <input onChange={(e)=>filter(e.target.value)} value="Hp" name="brand" type="radio"/>
-                    Hp
+                    <input onChange={(e)=>filter(e.target.value)} value="phones" name="brand" type="radio"/>
+                    Phones
                 </label>
                 <label>
-                    <input onChange={(e)=>filter(e.target.value)} value="Apple" name="brand" type="radio"/>
-                    Apple
-                </label>
-                <label>
-                    <input onChange={(e)=>filter(e.target.value)} value="Huawei" name="brand" type="radio"/>
-                    Huawei
+                    <input onChange={(e)=>filter(e.target.value)} value="accessory" name="brand" type="radio"/>
+                    Accessory
                 </label>
                 
             </div>
