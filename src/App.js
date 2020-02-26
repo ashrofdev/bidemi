@@ -20,7 +20,7 @@ class App extends Component {
         
       ],
       mainRoute: 'home',
-      route: 'home',
+      route: 'buyNow',
       product: {},
       search: '',
       filteredPrducts: [
@@ -97,6 +97,8 @@ class App extends Component {
 
   saveData = (e) => {
     e.preventDefault()
+    console.log(e)
+    console.log(e)
     const date = new Date()
       this.setState(
         {
