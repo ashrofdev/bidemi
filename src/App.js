@@ -17,12 +17,17 @@ import Admin from './components/Admin/Admin'
 class App extends Component {
   state = {
       products: [  
+        
       ],
       mainRoute: 'home',
       route: 'home',
       product: {},
       search: '',
-      filteredPrducts: [],
+      filteredPrducts: [
+        {
+          name: 'test'
+        }
+      ],
       userData: '',
       popUp: false
   }
@@ -73,6 +78,7 @@ class App extends Component {
   onMainRouteChange = (route) => {
     this.setState({mainRoute: route})
   }
+   
 
   onSearch = (value) => {
     this.setState({search: value})
@@ -91,18 +97,19 @@ class App extends Component {
 
   saveData = () => {
     const date = new Date()
-    this.setState(
-      {
-        userData: {
-          lastname: document.querySelector('.lastname').value,
-          firstname: document.querySelector('.firstname').value,
-          email: document.querySelector('.mail').value,
-          phone: document.querySelector('.phone').value,
-          address: document.querySelector('.address').value,
-          date: `${date.getDay()}-${date.getMonth()+1}-${date.getFullYear()}`
-      },
-        popUp: true
-      })
+      this.setState(
+        {
+          userData: {
+            lastname: document.querySelector('.lastname').value,
+            firstname: document.querySelector('.firstname').value,
+            email: document.querySelector('.mail').value,
+            phone: document.querySelector('.phone').value,
+            address: document.querySelector('.address').value,
+            date: `${date.getDay()}-${date.getMonth()+1}-${date.getFullYear()}`
+        },
+          popUp: true
+        })
+    
     console.log(this.state.userData)
   }
 

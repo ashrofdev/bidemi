@@ -69,9 +69,6 @@ class Admin extends Component {
     }
 
     render() {
-
-        
-
         return (
             <div className="admin">
                 <div className="loader">
