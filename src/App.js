@@ -95,7 +95,8 @@ class App extends Component {
     }
   }
 
-  saveData = () => {
+  saveData = (e) => {
+    e.preventDefault()
     const date = new Date()
       this.setState(
         {
