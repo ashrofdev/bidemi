@@ -3,14 +3,13 @@ import './app.css'
 
 import { firebaseDB, storage } from './Server';
 
-import Header from './components/Public/Header/Header';
-import Footer from './components/Public/Footer/Footer';
-import Products from './components/Public/Products/Products';
-import ProductDetails from './components/Public/ProductDetails/ProductDetails';
-import Bar from './components/Public/Side_bar/Bar';
-import Now from './components/Public/Buy_now/Now';
-import PopUp from './components/Public/popUp/PopUp'
-import Admin from './components/Admin/Admin'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Products from './components/Products/Products';
+import ProductDetails from './components/ProductDetails/ProductDetails';
+import Bar from './components/Side_bar/Bar';
+import Now from './components/Buy_now/Now';
+import PopUp from './components/popUp/PopUp'
 
 
 
