@@ -19,8 +19,7 @@ class App extends Component {
       products: [  
         
       ],
-      mainRoute: 'home',
-      route: 'buyNow',
+      route: 'home',
       product: {},
       search: '',
       filteredPrducts: [
@@ -143,14 +142,9 @@ class App extends Component {
     
     return (
       <div className="App">
-        {
-          this.state.mainRoute !== 'admin'?
           <div className="side_bar">
             <Bar toAdmin={this.onMainRouteChange} filter={this.filter}/>
-          </div>:null
-        }
-        {
-          this.state.mainRoute === 'home'?
+          </div>
           <div className="content">
             <Header onSearch={this.onSearch}/>
             {
@@ -167,10 +161,7 @@ class App extends Component {
             
             
             <Footer/>
-          </div>:
-          this.state.mainRoute === 'admin'?
-            <Admin/>: null
-        }
+          </div>
       </div>
     );
   }
