@@ -15,9 +15,7 @@ import PopUp from './components/popUp/PopUp'
 
 class App extends Component {
   state = {
-      products: [  
-        
-      ],
+      products: [],
       route: 'home',
       product: {},
       search: '',
@@ -48,20 +46,7 @@ class App extends Component {
     console.log(this.state.products)
 
   }
-  // authenticate = () => {
-  //   console.log('222')
-  //   const pass = prompt('ENTER PASSWORD')
-  //   if (pass === this.state.password) {
-  //       document.querySelector('.jobs').classList.add('show')
-  //       scroller.scrollTo('jobs', {
-  //           duration: 1000,
-  //           delay: 0,
-  //           smooth: true
-  //       })
-  //   } else {
-  //     alert('wrong password')
-  //   }
-  // }
+
 
   renderProduct = (product) => {
     this.setState(
