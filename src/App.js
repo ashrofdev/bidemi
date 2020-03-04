@@ -20,9 +20,7 @@ class App extends Component {
       product: {},
       search: '',
       filteredPrducts: [
-        {
-          name: 'test'
-        }
+       
       ],
       userData: '',
       popUp: false
@@ -42,6 +40,8 @@ class App extends Component {
             filteredPrducts: products,
             products
           })
+    }).catch(e=>{
+      console.log(e)
     })
     console.log(this.state.products)
 
@@ -103,13 +103,21 @@ class App extends Component {
     this.setState({popUp: false})
   }
   onProceedPurchase = async () => {
-    
-    alert('Sending')
+    document.querySelector('.loader').classList.add('show')
+    this.editUserData()
     await firebaseDB.ref('purchases').push().set({
       userData: this.state.userData,
       product: this.state.product
+    }).then(e=>{
+      this.setState({route: 'home'})
+      document.querySelector('.loader').textContent='👍 Successful, We will contact you as soon as possible'
+      document.querySelector('.loader').classList.add('sucess')
+      setTimeout(() => {
+        document.querySelector('.loader').classList.remove('show')
+      }, 7000)
     })
-    alert('sent')
+    
+    
     console.log({
       userData: this.state.userData,
       productDetails: this.state.product
@@ -123,9 +131,12 @@ class App extends Component {
     })
     console.log(filteredPrducts)
 
-    
     return (
       <div className="App">
+          <div className="loader">
+              <img src={require('./3.gif')}/>
+              <p>loading...</p>
+          </div>
           <div className="side_bar">
             <Bar toAdmin={this.onMainRouteChange} filter={this.filter}/>
           </div>
